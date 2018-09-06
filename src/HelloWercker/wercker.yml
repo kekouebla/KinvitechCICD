@@ -44,7 +44,7 @@ deploy:
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
-        repository: blakinvi/kinvitechcicd
+        repository: kinvitech/kinvitechcicd
         registry: https://registry.Hub.docker.com
         entrypoint: "/pipeline/source/app/docker_entrypoint.sh"
 
