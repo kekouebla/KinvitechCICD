@@ -39,12 +39,5 @@ build:
         code: |
           cp -r . $WERCHER_OUTPUT_DIR/app
           cd $WERCHER_OUTPUT_DIR/app
-deploy:
-  steps:
-    - internal/docker-push:
-        username: $USERNAME
-        password: $PASSWORD
-        repository: KinvitechCICD
-        registry: https://registry.Hub.docker.com
-        entrypoint: "/pipeline/source/app/docker_entrypoint.sh"
+
 
