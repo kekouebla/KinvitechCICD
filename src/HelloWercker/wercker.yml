@@ -37,7 +37,14 @@ build:
     - script:
         name: copy binary
         code: |
-          cp -r . $WERCHER_OUTPUT_DIR/app
+          cp -r $WERCHER_OUTPUT_DIR/app
           cd $WERCHER_OUTPUT_DIR/app
-
+deploy:
+  steps:
+    - internal/docker-push:
+        username: $USERNAME
+        password: $PASSWORD
+        repository: blakinvi/kinvitechcicd
+        registry: https://registry.Hub.docker.com
+        entrypoint: "/pipeline/source/app/docker_entrypoint.sh"
 
