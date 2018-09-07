@@ -1,5 +1,5 @@
 # KinvitechCICD
-This solution contains projects that demonstrate the continuous delivery of software with the following tools:
+This solution contains projects that demonstrate the continuous delivery of software with the following tool:
 * [Wercker](http://www.wercker.com/)
 ## Getting Started
 
