@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5890B8B5-176
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWercker", "src\HelloWercker\HelloWercker.csproj", "{42511419-2C04-45CA-AD56-AA3AD0CCC1A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloCircleCI", "src\HelloCircleCI\HelloCircleCI.csproj", "{04838119-9CB3-4D64-BF42-CC406B79ABFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +34,21 @@ Global
 		{42511419-2C04-45CA-AD56-AA3AD0CCC1A8}.Release|x64.Build.0 = Release|Any CPU
 		{42511419-2C04-45CA-AD56-AA3AD0CCC1A8}.Release|x86.ActiveCfg = Release|Any CPU
 		{42511419-2C04-45CA-AD56-AA3AD0CCC1A8}.Release|x86.Build.0 = Release|Any CPU
+		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Debug|x64.Build.0 = Debug|Any CPU
+		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Debug|x86.Build.0 = Debug|Any CPU
+		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Release|x64.ActiveCfg = Release|Any CPU
+		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Release|x64.Build.0 = Release|Any CPU
+		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Release|x86.ActiveCfg = Release|Any CPU
+		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{42511419-2C04-45CA-AD56-AA3AD0CCC1A8} = {5890B8B5-1764-4444-A661-FA507EB8D0B8}
+		{04838119-9CB3-4D64-BF42-CC406B79ABFA} = {5890B8B5-1764-4444-A661-FA507EB8D0B8}
 	EndGlobalSection
 EndGlobal
