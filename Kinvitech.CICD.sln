@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWercker", "src\HelloWe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloCircleCI", "src\HelloCircleCI\HelloCircleCI.csproj", "{04838119-9CB3-4D64-BF42-CC406B79ABFA}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3B6FE847-5B9C-4883-8519-188C8E2526EB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,18 +43,6 @@ Global
 		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Release|x64.Build.0 = Release|Any CPU
 		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Release|x86.ActiveCfg = Release|Any CPU
 		{04838119-9CB3-4D64-BF42-CC406B79ABFA}.Release|x86.Build.0 = Release|Any CPU
-		{3B6FE847-5B9C-4883-8519-188C8E2526EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B6FE847-5B9C-4883-8519-188C8E2526EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B6FE847-5B9C-4883-8519-188C8E2526EB}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{3B6FE847-5B9C-4883-8519-188C8E2526EB}.Debug|x64.Build.0 = Debug|Any CPU
-		{3B6FE847-5B9C-4883-8519-188C8E2526EB}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{3B6FE847-5B9C-4883-8519-188C8E2526EB}.Debug|x86.Build.0 = Debug|Any CPU
-		{3B6FE847-5B9C-4883-8519-188C8E2526EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B6FE847-5B9C-4883-8519-188C8E2526EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B6FE847-5B9C-4883-8519-188C8E2526EB}.Release|x64.ActiveCfg = Release|Any CPU
-		{3B6FE847-5B9C-4883-8519-188C8E2526EB}.Release|x64.Build.0 = Release|Any CPU
-		{3B6FE847-5B9C-4883-8519-188C8E2526EB}.Release|x86.ActiveCfg = Release|Any CPU
-		{3B6FE847-5B9C-4883-8519-188C8E2526EB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
