@@ -20,7 +20,7 @@ jobs:
             tar -xz -C /tmp -f /tmp/docker-$VER.tgz
             mv /tmp/docker/* /usr/bin
       - run: |
-          TAG=0.1.$CIRCLE_BUILD_NUM
+          TAG=kinvitechcircleciimage.0.1.$CIRCLE_BUILD_NUM
           docker login -u $DOCKER_USER -p $DOCKER_PASS
           docker build -t kinvitech/kinvitechcicd:$TAG .
           docker push kinvitech/kinvitechcicd:$TAG
