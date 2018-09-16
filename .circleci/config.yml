@@ -22,5 +22,5 @@ jobs:
       - run: |
           TAG=0.1.$CIRCLE_BUILD_NUM
           docker login -u $DOCKER_USER -p $DOCKER_PASS
-          docker build -t kinvitech/app:$TAG
-          docker push kinvitech/app:$TAG
+          docker build -t kinvitech/kinvitechcicd:$TAG .
+          docker push kinvitech/kinvitechcicd:$TAG
