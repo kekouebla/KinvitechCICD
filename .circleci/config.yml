@@ -21,6 +21,6 @@ jobs:
             mv /tmp/docker/* /usr/bin
       - run: |
           TAG=0.1.$CIRCLE_BUILD_NUM
-          docker build -t   kinvitech/kinvitechcicd:$TAG
+          docker build -t kinvitech/kinvitechcicd:$TAG
           docker login -u $DOCKER_USER -p $DOCKER_PASS
           docker push kinvitech/kinvitechcicd:$TAG
