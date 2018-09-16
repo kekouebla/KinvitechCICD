@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5890B8B5-1764-4444-A661-FA507EB8D0B8}"
-	ProjectSection(SolutionItems) = preProject
-		src\HelloCircleCI\Dockerfile = src\HelloCircleCI\Dockerfile
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWercker", "src\HelloWercker\HelloWercker.csproj", "{42511419-2C04-45CA-AD56-AA3AD0CCC1A8}"
 EndProject
