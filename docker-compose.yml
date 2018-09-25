@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  hellocircleci:
-    image: ${DOCKER_REGISTRY}hellocircleci
-    build:
-      context: .
-      dockerfile: src/HelloCircleCI/Dockerfile
