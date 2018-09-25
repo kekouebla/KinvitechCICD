@@ -29,3 +29,4 @@ C:\Kinvitech\KinvitechCICD\src\HelloWercker\obj\Debug\netcoreapp2.1\HelloWercker
 C:\Kinvitech\KinvitechCICD\src\HelloWercker\obj\Debug\netcoreapp2.1\HelloWercker.AssemblyInfo.cs
 C:\Kinvitech\KinvitechCICD\src\HelloWercker\obj\Debug\netcoreapp2.1\HelloWercker.dll
 C:\Kinvitech\KinvitechCICD\src\HelloWercker\obj\Debug\netcoreapp2.1\HelloWercker.pdb
+C:\Kinvitech\KinvitechCICD\src\HelloWercker\obj\Debug\netcoreapp2.1\HelloWercker.csprojAssemblyReference.cache
