@@ -1,4 +1,4 @@
-﻿FROM microsoft/aspnetcore-build
+FROM microsoft/dotnet
  
 WORKDIR /home/app
  
