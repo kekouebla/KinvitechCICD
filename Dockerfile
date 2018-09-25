@@ -1,13 +1,9 @@
-FROM microsoft/dotnet:sdk AS build-env
+FROM microsoft/aspnetcore-build
+
+LABEL author="Kinvi Ekoue-Bla"
+
+ENV ASPNETCORE_URLS=http://*:5000
 
 WORKDIR /app
 
-COPY . .
- 
-RUN dotnet restore
- 
-RUN dotnet publish ./src/HelloCircleCI/HelloCircleCI.csproj -o /publish/
- 
-WORKDIR /publish
-
-ENTRYPOINT ["dotnet", "HelloCircleCI.dll"]
+CMD ["bin/bash", "-c", "dotnet restore && dotnet run"]
