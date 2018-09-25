@@ -1,7 +1,7 @@
 FROM microsoft/aspnetcore-build as publish
 WORKDIR /publish
 COPY HelloCircleCI.csproj .
-RUN dotnet restore
+RUN dotnet restore HelloCircleCI.csproj
 COPY . .
 RUN dotnet publish --output ./out
 
