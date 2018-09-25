@@ -1,10 +1,12 @@
 FROM microsoft/dotnet
  
 WORKDIR /home/app
+
+COPY ./src/HelloCircleCI/HelloCircleCI.csproj ./HelloCircleCI/
+
+RUN dotnet restore
  
 COPY . .
- 
-RUN dotnet restore
  
 RUN dotnet publish ./src/HelloCircleCI/HelloCircleCI.csproj -o /publish/
  
