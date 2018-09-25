@@ -1,9 +1,9 @@
 version: 2
 jobs:
   build:
-    working_directory: /home/app
+    working_directory: /app
     docker:
-      - image: microsoft/aspnetcore-build
+      - image: microsoft/dotnet
     steps:
       - checkout
       - run: dotnet restore
