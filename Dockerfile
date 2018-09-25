@@ -3,7 +3,7 @@ FROM microsoft/dotnet
 WORKDIR /home/app
 
 COPY ./src/HelloCircleCI/HelloCircleCI.csproj ./HelloCircleCI/
-COPY ./src/HelloCircleCI/HelloWercker.csproj ./HelloWercker/
+COPY ./src/HelloWercker/HelloWercker.csproj ./HelloWercker/
 COPY ./Kinvitech.CICD.sln .
 
 RUN dotnet restore
