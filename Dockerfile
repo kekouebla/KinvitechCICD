@@ -6,7 +6,7 @@ COPY . .
  
 RUN dotnet restore
  
-RUN dotnet publish ./src/HelloCircleCI/HelloCirclCI.csproj -o /publish/
+RUN dotnet publish ./src/HelloCircleCI/HelloCircleCI.csproj -o /publish/
  
 WORKDIR /publish
  
