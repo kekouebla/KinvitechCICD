@@ -1,15 +1,13 @@
-﻿FROM microsoft/aspnetcore-build
-
-LABEL author="Kinvi Ekoue-Bla"
-
+﻿FROM microsoft/dotnet:sdk AS build-env
 WORKDIR /app
-
-COPY . .
-
+ # Copy csproj and restore as distinct layers
+COPY *.csproj ./
 RUN dotnet restore
-
-RUN dotnet publish ./src/HelloCircleCI/HelloCircleCI.csproj -o /publish/
-
-WORKDIR /publish
-
+ # Copy everything else and build
+COPY . ./
+RUN dotnet publish -c Release -o out
+ # Build runtime image
+FROM microsoft/dotnet:aspnetcore-runtime
+WORKDIR /app
+COPY --from=build-env /app/out .
 ENTRYPOINT ["dotnet", "HelloCircleCI.dll"]
