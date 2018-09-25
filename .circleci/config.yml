@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: /app
     docker:
-      - image: microsoft/dotnet:2.1-sdk
+      - image: microsoft/dotnet
     steps:
       - checkout
       - run: dotnet restore
