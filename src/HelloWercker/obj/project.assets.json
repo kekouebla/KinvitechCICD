@@ -7983,11 +7983,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Kinvitech\\Kinvitech.CICD\\src\\HelloWercker\\HelloWercker.csproj",
+      "projectUniqueName": "C:\\Kinvitech\\KinvitechCICD\\src\\HelloWercker\\HelloWercker.csproj",
       "projectName": "HelloWercker",
-      "projectPath": "C:\\Kinvitech\\Kinvitech.CICD\\src\\HelloWercker\\HelloWercker.csproj",
+      "projectPath": "C:\\Kinvitech\\KinvitechCICD\\src\\HelloWercker\\HelloWercker.csproj",
       "packagesPath": "C:\\Users\\kinvie\\.nuget\\packages\\",
-      "outputPath": "C:\\Kinvitech\\Kinvitech.CICD\\src\\HelloWercker\\obj\\",
+      "outputPath": "C:\\Kinvitech\\KinvitechCICD\\src\\HelloWercker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
