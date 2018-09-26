@@ -3,8 +3,8 @@ FROM microsoft/dotnet
 WORKDIR /home/app
 
 COPY ./*.sln ./
-COPY ./*/*.csproj ./
-RUN for file in $(ls *.csproj); do mkdir -p ./${file%.*}/ && mv $file ./${file%.*}/; done
+COPY src/*/*.csproj ./
+RUN for file in $(ls *.csproj); do mkdir -p src/${file%.*}/ && mv $file src/${file%.*}/; done
 
 RUN dotnet restore
  
