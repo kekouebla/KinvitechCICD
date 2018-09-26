@@ -2,9 +2,9 @@ FROM microsoft/dotnet
  
 WORKDIR /home/app
 
-COPY ./src/HelloCircleCI/HelloCircleCI.csproj ./src/HelloCircleCI/HelloCircleCI.csproj
-COPY ./src/HelloWercker/HelloWercker.csproj ./src/HelloWercker/HelloWercker.csproj
-COPY ./Kinvitech.CICD.sln .
+COPY ./*.sln ./
+COPY ./*/*.csproj ./
+RUN for file in $(ls *.csproj); do mkdir -p ./${file%.*}/ && mv $file ./${file%.*}/; done
 
 RUN dotnet restore
  
