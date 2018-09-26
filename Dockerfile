@@ -1,4 +1,4 @@
-FROM microsoft/dotnet
+FROM microsoft/dotnet:2.1-sdk AS build
  
 WORKDIR /home/app
 
@@ -11,7 +11,11 @@ RUN dotnet restore
 COPY . .
  
 RUN dotnet publish ./src/HelloCircleCI/HelloCircleCI.csproj -o /publish/
+
+FROM microsoft/dotnet:2.1-runtime AS runtime
  
 WORKDIR /publish
+
+COPY --from=build /publish .
  
 ENTRYPOINT ["dotnet", "HelloCircleCI.dll"]
