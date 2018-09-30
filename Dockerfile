@@ -12,7 +12,7 @@ COPY . .
  
 RUN dotnet publish ./src/HelloCircleCI/HelloCircleCI.csproj -o /publish/
 
-FROM microsoft/dotnet:2.1-runtime AS runtime
+FROM microsoft/dotnet:2.1-aspnetcore-runtime AS runtime
  
 WORKDIR /publish
 
