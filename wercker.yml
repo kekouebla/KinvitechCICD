@@ -19,6 +19,7 @@ build:
         code: |
           cp -r . $WERCKER_OUTPUT_DIR/app 
           cd $WERCKER_OUTPUT_DIR/app
+box: microsoft/dotnet:2.1-aspnetcore-runtime
 deploy:
   steps:
     - internal/docker-push:
