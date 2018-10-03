@@ -33,7 +33,7 @@ jobs:
       - deploy:
           name: Build and push Docker image
           command: |
-            TAG=0.1.$CIRCLE_BUILD_NUM
+            TAG=kinvitechcircleciimage.0.1.$CIRCLE_BUILD_NUM
             docker build -f ./src/HelloCircleCI/Dockerfile -t kinvitech/kinvitechcicd:$TAG .
             docker login -u $DOCKER_USER -p $DOCKER_PASS
             docker push kinvitech/kinvitechcicd:$TAG
