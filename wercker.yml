@@ -5,15 +5,15 @@ build:
     - script:
         name: restore
         code: |
-          dotnet restore
+          dotnet restore src/HelloWercker/HelloWercker.csproj
     - script:
-        name: build
+        name: build 
         code: |
-          dotnet build
+          dotnet build src/HelloWercker/HelloWercker.csproj
     - script:
         name: publish
         code: |
-          dotnet publish -o publish	 
+          dotnet publish src/HelloWercker/HelloWercker.csproj -o publish	 
     - script:
         name: copy binary
         code: |
