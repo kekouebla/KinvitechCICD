@@ -9,11 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWercker", "src\HelloWe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloCircleCI", "src\HelloCircleCI\HelloCircleCI.csproj", "{04838119-9CB3-4D64-BF42-CC406B79ABFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloJenkins", "src\HelloJenkins\HelloJenkins.csproj", "{98813697-C57D-43D3-A405-908BD4F8870B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloJenkins", "src\HelloJenkins\HelloJenkins.csproj", "{98813697-C57D-43D3-A405-908BD4F8870B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloTeamCity", "src\HelloTeamCity\HelloTeamCity.csproj", "{D965E79D-B507-4F42-87D8-9F2A1601EBFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloTeamCity", "src\HelloTeamCity\HelloTeamCity.csproj", "{D965E79D-B507-4F42-87D8-9F2A1601EBFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloTravisCI", "src\HelloTravisCI\HelloTravisCI.csproj", "{D6723CBB-A2A1-479C-A878-ABFE8426CA02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloTravisCI", "src\HelloTravisCI\HelloTravisCI.csproj", "{D6723CBB-A2A1-479C-A878-ABFE8426CA02}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{40B03EC7-F1A9-4245-998F-1EBFEDDA15AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,18 @@ Global
 		{D6723CBB-A2A1-479C-A878-ABFE8426CA02}.Release|x64.Build.0 = Release|Any CPU
 		{D6723CBB-A2A1-479C-A878-ABFE8426CA02}.Release|x86.ActiveCfg = Release|Any CPU
 		{D6723CBB-A2A1-479C-A878-ABFE8426CA02}.Release|x86.Build.0 = Release|Any CPU
+		{40B03EC7-F1A9-4245-998F-1EBFEDDA15AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B03EC7-F1A9-4245-998F-1EBFEDDA15AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B03EC7-F1A9-4245-998F-1EBFEDDA15AC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{40B03EC7-F1A9-4245-998F-1EBFEDDA15AC}.Debug|x64.Build.0 = Debug|Any CPU
+		{40B03EC7-F1A9-4245-998F-1EBFEDDA15AC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{40B03EC7-F1A9-4245-998F-1EBFEDDA15AC}.Debug|x86.Build.0 = Debug|Any CPU
+		{40B03EC7-F1A9-4245-998F-1EBFEDDA15AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B03EC7-F1A9-4245-998F-1EBFEDDA15AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B03EC7-F1A9-4245-998F-1EBFEDDA15AC}.Release|x64.ActiveCfg = Release|Any CPU
+		{40B03EC7-F1A9-4245-998F-1EBFEDDA15AC}.Release|x64.Build.0 = Release|Any CPU
+		{40B03EC7-F1A9-4245-998F-1EBFEDDA15AC}.Release|x86.ActiveCfg = Release|Any CPU
+		{40B03EC7-F1A9-4245-998F-1EBFEDDA15AC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
