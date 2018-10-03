@@ -13,7 +13,7 @@ build:
     - script:
         name: publish
         code: |
-          dotnet publish -o publish	 
+          dotnet publish src/HelloWercker/HelloWercker.csproj -o publish	 
     - script:
         name: copy binary
         code: |
