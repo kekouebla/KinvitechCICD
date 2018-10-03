@@ -6,9 +6,9 @@ jobs:
       - image: microsoft/dotnet
     steps:
       - checkout
-      #- run: dotnet restore
-      #- run: dotnet build
-      #- run: dotnet publish -o publish
+      - run: dotnet restore src/HelloCircleCI/HelloCircleCI.csproj
+      - run: dotnet build
+      - run: dotnet publish -o publish
       - setup_remote_docker:
           docker_layer_caching: true
       - run:

@@ -5,7 +5,7 @@ build:
     - script:
         name: restore
         code: |
-          dotnet restore
+          dotnet restore src/HelloWercker/HelloWercker.csproj
     - script:
         name: build
         code: |
