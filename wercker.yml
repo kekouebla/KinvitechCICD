@@ -7,9 +7,9 @@ build:
         code: |
           dotnet restore src/HelloWercker/HelloWercker.csproj
     - script:
-        name: build
+        name: build 
         code: |
-          dotnet build
+          dotnet build src/HelloWercker/HelloWercker.csproj
     - script:
         name: publish
         code: |

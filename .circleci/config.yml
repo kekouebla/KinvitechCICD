@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: dotnet restore src/HelloCircleCI/HelloCircleCI.csproj
-      - run: dotnet build
+      - run: dotnet build src/HelloCircleCI/HelloCircleCI.csproj
       - run: dotnet publish -o publish
       - setup_remote_docker:
           docker_layer_caching: true
