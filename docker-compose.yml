@@ -2,7 +2,12 @@ version: '3.0'
 
 services:
   hellocircleci:
-    image: kinvitechhellocircleci
+    image: kinvitechcircleciimage
     build:
       context: .
       dockerfile: src/HelloCircleCI/Dockerfile
+  hellowercker:
+    image: kinvitechwerckerimage
+    build:
+      context: .
+      dockerfile: src/hellowercker/Dockerfile
