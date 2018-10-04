@@ -10,4 +10,4 @@ services:
     image: kinvitechwerckerimage
     build:
       context: .
-      dockerfile: src/hellowercker/Dockerfile
+      dockerfile: src/helloWercker/Dockerfile
