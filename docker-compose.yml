@@ -14,5 +14,5 @@ services:
   helloJenkins:
     image: kinvitechjenkinsimage
     build:
-      context: .
+      context: src/HelloJenkins
       dockerfile: src/HelloJenkins/Dockerfile
