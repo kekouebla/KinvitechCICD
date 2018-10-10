@@ -7,7 +7,7 @@ pipeline {
 	stages {
         stage('Build') {
             steps {
-				sh "docker build -t kinvitechjenkinsimage:${env.BUILD_ID} -f src/HelloJenkins/Dockerfile ."
+				sh "docker build -t kinvitechjenkinsimage:${env.BUILD_ID} ."
             }
         }
         stage('Test') {
