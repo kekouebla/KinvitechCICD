@@ -1,9 +1,13 @@
 pipeline {
-    agent { dockerfile true }
+    agent { 
+		dockerfile {
+			dir 'src/HelloJenkins'
+		}        
+    }
 	stages {
         stage('Build') {
             steps {
-				sh "docker build -f src/HelloJenkins/Dockerfile -t kinvitechjenkinsimage:${env.BUILD_ID} ."
+				sh "docker build -t kinvitechjenkinsimage:${env.BUILD_ID} ."
             }
         }
         stage('Test') {
