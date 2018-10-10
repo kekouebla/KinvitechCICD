@@ -3,9 +3,6 @@ WORKDIR /app
 
 FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /src
-ARG SSH_KEY
-ENV SSH_KEY=$SSH_KEY
-RUN echo "$SSH_KEY" > /root/.ssh/HelloJenkins.csproj
 COPY src/HelloJenkins/HelloJenkins.csproj src/HelloJenkins/
 RUN dotnet restore src/HelloJenkins/HelloJenkins.csproj
 COPY . .

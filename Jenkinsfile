@@ -7,7 +7,7 @@ pipeline {
 	stages {
         stage('Build') {
             steps {
-				sh "docker build -t kinvitechjenkinsimage:${env.BUILD_ID} --build-arg SSH_KEY="$(cat ~/src/HelloJenkins/HelloJenkins.csproj)" ."
+				sh "docker build -t kinvitechjenkinsimage:${env.BUILD_ID} ."
             }
         }
         stage('Test') {
