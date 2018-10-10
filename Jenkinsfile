@@ -2,6 +2,7 @@ pipeline {
     agent { 
 		dockerfile {
 			dir 'src/HelloJenkins'
+			additionalBuildArgs  '--build-arg projectFile=src/HelloJenkins/HelloJenkins.csproj'
 		}        
     }
 	stages {
