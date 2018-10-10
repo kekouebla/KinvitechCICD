@@ -8,6 +8,7 @@ pipeline {
         stage('Build') {
             steps {
 				sh "docker build . -t kinvitechjenkinsimage:${env.BUILD_ID}"
+				sh "docker-compose up -d"
             }
         }
         stage('Test') {
