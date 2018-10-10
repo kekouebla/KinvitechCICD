@@ -6,7 +6,6 @@ WORKDIR /src
 RUN mkdir /src/HelloJenkins
 RUN echo "HelloJenkins.csproj" > /src/HelloJenkins/HelloJenkins.csproj
 VOLUME /src/HelloJenkins
-COPY src/HelloJenkins/HelloJenkins.csproj src/HelloJenkins/
 RUN dotnet restore src/HelloJenkins/HelloJenkins.csproj
 COPY . .
 WORKDIR /src/src/HelloJenkins
