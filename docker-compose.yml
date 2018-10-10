@@ -16,5 +16,3 @@ services:
     build:
       context: .
       dockerfile: src/HelloJenkins/Dockerfile
-      volumes:
-        - src/HelloJenkins:src/HelloJenkins
