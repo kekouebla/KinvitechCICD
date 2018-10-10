@@ -2,10 +2,10 @@ FROM microsoft/dotnet:2.1-runtime AS base
 WORKDIR /app
 
 FROM microsoft/dotnet:2.1-sdk AS build
+WORKDIR /src
 RUN mkdir /src/HelloJenkins
 RUN echo "HelloJenkins.csproj" > /src/HelloJenkins/HelloJenkins.csproj
 VOLUME /src/HelloJenkins
-WORKDIR /src
 COPY src/HelloJenkins/HelloJenkins.csproj src/HelloJenkins/
 RUN dotnet restore src/HelloJenkins/HelloJenkins.csproj
 COPY . .
