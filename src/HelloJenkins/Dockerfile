@@ -5,7 +5,7 @@ FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /src
 ARG projectFile
 ENV projectFile=$projectFile
-RUN echo "$projectFile" > src/HelloJenkins/HelloJenkins.csproj
+RUN echo "$projectFile" > src/HelloJenkins
 COPY src/HelloJenkins/HelloJenkins.csproj src/HelloJenkins/
 RUN dotnet restore src/HelloJenkins/HelloJenkins.csproj
 COPY . .
