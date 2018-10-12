@@ -11,8 +11,4 @@ services:
     build:
       context: .
       dockerfile: src/HelloWercker/Dockerfile
-  helloJenkins:
-    image: kinvitechjenkinsimage
-    build:
-      context: .
-      dockerfile: src/HelloJenkins/Dockerfile
+
