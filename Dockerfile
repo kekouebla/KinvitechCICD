@@ -1,7 +1,6 @@
 FROM microsoft/dotnet:2.1-sdk as build
 WORKDIR /src
 COPY src/*/*.csproj src/HelloJenkins/
-RUN for file in $(ls *.csproj); do mkdir -p src/${file%.*}/ && mv $file src/${file%.*}/; done
 RUN dotnet restore src/HelloJenkins/HelloJenkins.csproj
 COPY . .
 WORKDIR /src/src/HelloJenkins
