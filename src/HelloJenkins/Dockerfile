@@ -3,9 +3,7 @@ WORKDIR /app
 
 FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /src
-ENV projectFile=HelloJenkins.csproj
-RUN echo $projectFile > HelloJenkins.csproj
-COPY $projectFile src/HelloJenkins/
+COPY src/HelloJenkins/HelloJenkins.csproj src/HelloJenkins/
 RUN dotnet restore src/HelloJenkins/HelloJenkins.csproj
 COPY . .
 WORKDIR /src/src/HelloJenkins
