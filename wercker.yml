@@ -18,4 +18,3 @@ deploy:
         tag: kinvitechwerckerimage
         repository: kinvitech/kinvitechcicd
         registry: https://registry.hub.docker.com
-        entrypoint: "/pipeline/source/app/docker_entrypoint.sh"
