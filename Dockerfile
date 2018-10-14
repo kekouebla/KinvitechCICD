@@ -9,4 +9,4 @@ RUN dotnet publish HelloJenkins.csproj -c Release -o /app
 FROM microsoft/dotnet:2.1-runtime
 WORKDIR /app
 COPY --from=build /app .
-ENTRYPOINT dotnet run
+ENTRYPOINT ["dotnet", "HelloJenkins.dll"]
