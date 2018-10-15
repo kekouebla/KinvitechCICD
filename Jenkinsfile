@@ -21,8 +21,10 @@ pipeline {
 				DOCKER_CREDS = credentials('jenkins-user-for-kinvitechcicd-docker')
 			}
             steps {
-				sh "docker login -u $DOCKER_CREDS_USR -p $DOCKER_CREDS_PSW"
-				sh "docker push https://registry.hub.docker.com/kinvitech/kinvitechcicd/kinvitechjenkinsimage:${env.BUILD_ID}"
+				withDockerRegistry([credentialsId: "jenkins-user-for-kinvitechcicd-docker", url: "https://registry.hub.docker.com/"]) {
+					sh "docker login -u $DOCKER_CREDS_USR -p $DOCKER_CREDS_PSW"
+					sh "docker push kinvitech/kinvitechcicd:kinvitechjenkinsimage:${env.BUILD_ID}"
+				}
             }
         }
     }
