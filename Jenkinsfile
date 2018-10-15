@@ -8,7 +8,7 @@ pipeline {
 	stages {
         stage('Build') {
             steps {
-				sh "docker build -t kinvitechjenkinsimage.${env.BUILD_ID} ."
+				sh "docker build -t kinvitechjenkinsimage:${env.BUILD_ID} ."
             }
         }
         stage('Test') {
@@ -23,8 +23,8 @@ pipeline {
             steps {
 				withDockerRegistry([credentialsId: "jenkins-user-for-kinvitechcicd-docker", url: "https://registry.hub.docker.com/kinvitech"]) {
 					sh "docker login -u $DOCKER_CREDS_USR -p $DOCKER_CREDS_PSW"
-					sh "docker tag kinvitechjenkinsimage kinvitech/kinvitechcicd:kinvitechjenkinsimage.${env.BUILD_ID}"
-					sh "docker push kinvitech/kinvitechcicd:kinvitechjenkinsimage.${env.BUILD_ID}"
+					sh "docker tag kinvitechjenkinsimage:${env.BUILD_ID} kinvitech/kinvitechcicd:kinvitechjenkinsimage:${env.BUILD_ID}"
+					sh "docker push kinvitech/kinvitechcicd:kinvitechjenkinsimage:${env.BUILD_ID}"
 				}
             }
         }
