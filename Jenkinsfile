@@ -12,7 +12,11 @@ pipeline {
             }
         }
         stage('Deploy') {
+			environment {
+				DOCKER_CREDS = credentials('jenkins-user-for-kinvitechcicd-docker')
+			}
             steps {
+				sh "docker login -u $DOCKER_CREDS_USR -p $DOCKER_CREDS_PSW"
 				sh "docker push kinvitechjenkinsimage:${env.BUILD_ID}"
             }
         }
