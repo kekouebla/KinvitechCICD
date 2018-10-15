@@ -23,8 +23,8 @@ pipeline {
             steps {
 				withDockerRegistry([credentialsId: "jenkins-user-for-kinvitechcicd-docker", url: "https://registry.hub.docker.com"]) {
 					sh "docker login -u $DOCKER_CREDS_USR -p $DOCKER_CREDS_PSW"
-					sh "docker tag kinvitechjenkinsimage:${env.BUILD_ID} kinvitech/kinvitechcicd:kinvitechjenkinsimage:${env.BUILD_ID}"
-					sh "docker push kinvitech/kinvitechcicd"
+					sh "docker tag kinvitechjenkinsimage:${env.BUILD_ID} https://hub.docker.com/u/kinvitech/kinvitechcicd:kinvitechjenkinsimage:${env.BUILD_ID}"
+					sh "docker push https://hub.docker.com/u/kinvitech/kinvitechcicd:kinvitechjenkinsimage:${env.BUILD_ID}"
 				}
             }
         }
