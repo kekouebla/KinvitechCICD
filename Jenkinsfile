@@ -1,5 +1,9 @@
 pipeline {
-    agent { dockerfile true }
+    agent { 
+			dockerfile true
+			registryUrl 'https://registry.hub.docker.com/kinvitech/kinvitechcicd/'
+			registryCredentialsId 'jenkins-user-for-kinvitechcicd-docker'
+		}
 	stages {
         stage('Build') {
             steps {
